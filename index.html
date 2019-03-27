@@ -8,47 +8,49 @@
   <link href="css/grid.css" rel="stylesheet">
   <link href="css/type.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
 </head>
 
 <body>
   <section>
-    <header class="island">
+    <header class="gutter-1-2 pad-t pad-b-1-2 push">
       <div class="max-length">
-        <h1 class="push-1-2 bold">Apply to be a tree planter</h1>
-        <p class="bold">Trees are one of the world’s most precious renewable resources—we need your help to renew the ecosystem.</p>
+        <h1 class="bold zetta push-1-2">Apply to be a tree planter</h1>
+        <p class="bold mega">Trees are one of the world’s most precious renewable resources—we need your help to renew the ecosystem.</p>
       </div>
     </header>
 
-    <form class="" method="POST" action="index.html" >
-      <fieldset><!Personal Details>
-        <legend class="pad-b-1-2 mega">Personal details</legend>
+    <form class="pad-t push gutter-1-2" method="POST" action="index.html" >
+      <fieldset class="personal"><!Personal Details>
+        <legend class="giga push">Personal details</legend>
 
         <div class="grid">
           <div class="name unit xs-1 s-1 m-1-2 l-1-2">
-            <div class="push">
-              <label for="name">Full name</label>
+            <div class="push pad-t-1-4">
+              <label class="pad-b-1-8" for="name">Full name</label>
               <input id="name" required>
+              <p class="micro italic pad-t-1-8">Your full legal name, for insurance purposes, e.g. “Elizabeth Bradley”.</p>
             </div>
           </div>
 
-          <div class="name unit xs-1 s-1 m-1-2 l-1-2">
+          <div class="nickame unit xs-1 s-1 m-1-2 l-1-2">
             <div class="push">
-              <label for="nickname">What should we call you?</label>
+              <label class="pad-b-1-8" for="nickname">What should we call you?</label>
               <input id="nickname" required>
+              <p class="micro italic pad-t-1-8">What all your friends call you, e.g. “Liz”.</p>
             </div>
           </div>
 
           <div class="birth unit xs-1 s-1 m-1-2 l-1-2">
             <div class="push">
-              <label for="birth">Date of birth</label>
-              <input id="birth" required>
+              <label class="pad-b-1-8" for="birth">Date of birth</label>
+              <input type="date" id="birth" required>
             </div>
           </div>
 
           <div class="size unit xs-1 s-1 m-1-2 l-1-2">
             <div class="push">
-              <label for="size">Physical fitness</label>
+              <label class="pad-b-1-8" for="size">T-shirt size</label>
               <select id="size" name="size">
                 <option>Select a t-shirt size</option>
                 <option>Fitted: XS</option>
@@ -67,22 +69,22 @@
 
           <div class="email unit xs-1 s-1 m-1-2 l-1-2">
             <div class="push">
-              <label for="email">Email</label>
+              <label class="pad-b-1-8" for="email">Email</label>
               <input id="email" required>
             </div>
           </div>
 
           <div class="phone unit xs-1 s-1 m-1-2 l-1-2">
             <div class="push">
-              <label for="phone">Phone number</label>
+              <label class="pad-b-1-8" for="phone">Phone number<span class="italic">(optional)</span></label>
               <input id="phone" required>
             </div>
           </div>
         </div>
       </fieldset>
 
-      <fieldset><!address>
-        <legend class="pad-b-1-2 mega">Address</legend>
+      <fieldset class="address"><!address>
+        <legend class="pad-b-1-2 giga">Address</legend>
 
         <div class="grid">
           <div class="street unit xs-1 s-1 m-1-2 l-1-2">
@@ -123,44 +125,89 @@
 
           <div class="postal unit xs-1 s-1 m-1-2 l-1-2">
             <div class="push">
-              <label for="postal">Postal code</label>
+              <label class="pad-b-1-8" for="postal">Postal code</label>
               <input id="postal" required>
             </div>
           </div>
-        </fieldset>
-      </div>
+        </div>
+      </fieldset>
 
       <fieldset><!activities>
         <legend class="pad-b-1-2 mega">What activities are you interested in helping with</legend>
-      </fieldset>
 
+        <div class="grid">
+          <div class="unit xs-1 s-1 m-1-2 l-1-2">
+            <div class="push">
+              <input type="checkbox" id="digging" required>
+              <label for="digging">Digging holes</label>
+
+              <input type="checkbox" id="dirty" required>
+              <label for="dirty">Getting dirty</label>
+
+              <input type="checkbox" id="lifting" required>
+              <label for="lifting">Lifting heavy objects</label>
+
+              <input type="checkbox" id="driving" required>
+              <label for="driving">Driving people</label>
+
+              <input type="checkbox" id="trees" required>
+              <label for="trees">Transporting trees</label>
+
+              <input type="checkbox" id="photos" required>
+              <label for="photos">Taking photos</label>
+
+              <input type="checkbox" id="online" required>
+              <label for="online">Online publishing</label>
+
+              <input type="checkbox" id="managing" required>
+              <label for="managing">Managing people</label>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
       <fieldset><!experience>
         <legend class="pad-b-1-2 mega">Do you have any experience with the following?</legend>
+        <div class="grid">
+          <div class="unit xs-1 s-1 m-1-2 l-1-2">
+            <div class="push">
+              <input type="checkbox" id="experience" required>
+              <label for="experience"></label>
+            </div>
+          </div>
+        </div>
       </fieldset>
 
       <fieldset><!drivers>
-        <legend class="pad-b-1-2 mega">Do you have a valid driver’s license?</legend>
+        <legend class="pad-b-1-2 giga">Do you have a valid driver’s license?</legend>
       </fieldset>
 
       <fieldset><!truck>
-        <legend class="pad-b-1-2 mega">Do you have a pick-up truck you’d be willing to use?</legend>
+        <legend class="pad-b-1-2 giga">Do you have a pick-up truck you’d be willing to use?</legend>
       </fieldset>
 
       <fieldset><!firstaid>
-        <legend class="pad-b-1-2 mega">Do you have up-to-date first-aid certification?</legend>
+        <legend class="pad-b-1-2 giga">Do you have up-to-date first-aid certification?</legend>
       </fieldset>
 
       <fieldset><!comments>
-        <legend class="pad-b-1-2 mega">Please let us know any comments or questions you may have.</legend>
+        <legend class="push giga">Please let us know any comments or questions you may have.</legend>
         <div class="push">
-          <input id="comments" required>
+          <label for="comments"></label>
+          <input type="" id="comments" required>
         </div>
       </fieldset>
 
       <div class="text-center push-0">
-        <button class="btn kilo push-0" type="submit">Register for the trip!</button>
+        <button class="btn gutter mega push-0" type="submit">Apply</button>
       </div>
-
 
     </form>
   </section>
