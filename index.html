@@ -20,9 +20,8 @@
       </div>
     </header>
 
-
     <form class="" method="POST" action="index.html" >
-      <fieldset>
+      <fieldset><!Personal Details>
         <legend class="pad-b-1-2 mega">Personal details</legend>
 
         <div class="grid">
@@ -35,8 +34,8 @@
 
           <div class="name unit xs-1 s-1 m-1-2 l-1-2">
             <div class="push">
-              <label for="name">What should we call you?</label>
-              <input id="name" required>
+              <label for="nickname">What should we call you?</label>
+              <input id="nickname" required>
             </div>
           </div>
 
@@ -50,7 +49,7 @@
           <div class="size unit xs-1 s-1 m-1-2 l-1-2">
             <div class="push">
               <label for="size">Physical fitness</label>
-              <select id="size" name="fitness">
+              <select id="size" name="size">
                 <option>Select a t-shirt size</option>
                 <option>Fitted: XS</option>
                 <option>Fitted: S</option>
@@ -79,13 +78,90 @@
               <input id="phone" required>
             </div>
           </div>
-        </fieldset>
+        </div>
+      </fieldset>
 
-        <fieldset>
-          <legend class="pad-b-1-2 mega">Personal details</legend>
-        </fieldset>
+      <fieldset><!address>
+        <legend class="pad-b-1-2 mega">Address</legend>
 
-      </form>
-    </div>
+        <div class="grid">
+          <div class="street unit xs-1 s-1 m-1-2 l-1-2">
+            <div class="push">
+              <label for="street">Street address</label>
+              <input id="street" required>
+            </div>
+          </div>
+
+          <div class="city unit xs-1 s-1 m-1-2 l-1-2">
+            <div class="push">
+              <label for="city">City</label>
+              <input id="city" required>
+            </div>
+          </div>
+
+          <div class="province unit xs-1 s-1 m-1-2 l-1-2">
+            <div class="push">
+              <label for="province">Province</label>
+              <select id="province" name="province">
+                <option>Select a province</option>
+                <option>Alberta</option>
+                <option>British Columbia</option>
+                <option>Manitoba</option>
+                <option>New Brunswick</option>
+                <option>Newfoundland & Labrador</option>
+                <option>Northwest Territories</option>
+                <option>Nova Scotia</option>
+                <option>Nunavut</option>
+                <option>Ontario</option>
+                <option>Prince Edward Island</option>
+                <option>Québec</option>
+                <option>Saskatchewan</option>
+                <option>Yukon</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="postal unit xs-1 s-1 m-1-2 l-1-2">
+            <div class="push">
+              <label for="postal">Postal code</label>
+              <input id="postal" required>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+
+      <fieldset><!activities>
+        <legend class="pad-b-1-2 mega">What activities are you interested in helping with</legend>
+      </fieldset>
+
+      <fieldset><!experience>
+        <legend class="pad-b-1-2 mega">Do you have any experience with the following?</legend>
+      </fieldset>
+
+      <fieldset><!drivers>
+        <legend class="pad-b-1-2 mega">Do you have a valid driver’s license?</legend>
+      </fieldset>
+
+      <fieldset><!truck>
+        <legend class="pad-b-1-2 mega">Do you have a pick-up truck you’d be willing to use?</legend>
+      </fieldset>
+
+      <fieldset><!firstaid>
+        <legend class="pad-b-1-2 mega">Do you have up-to-date first-aid certification?</legend>
+      </fieldset>
+
+      <fieldset><!comments>
+        <legend class="pad-b-1-2 mega">Please let us know any comments or questions you may have.</legend>
+        <div class="push">
+          <input id="comments" required>
+        </div>
+      </fieldset>
+
+      <div class="text-center push-0">
+        <button class="btn kilo push-0" type="submit">Register for the trip!</button>
+      </div>
+
+
+    </form>
   </section>
 </body>
