@@ -17,9 +17,8 @@ fieldset {
   border-color: #fff;
 }
 
-.address,
-.personal {
-  border-bottom: solid 1px rgba(112, 173, 85, .5);
+hr {
+  border: solid 1px rgba(112, 173, 85, .3);
 }
 
 span {
@@ -41,18 +40,4 @@ select {
   color: #fff;
   border-color: #6e8c62;
   border-radius: 1px;
-}
-
-@media only screen and (min-width: 60em) {
-
-  .name,
-  .email {
-    padding-left: 0;
-  }
-
-  .age,
-  .fitness {
-    padding-right: 0;
-  }
-
 }
