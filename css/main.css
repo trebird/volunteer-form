@@ -1,0 +1,26 @@
+html {
+  font-family: "Open Sans", sans-serif;
+  background: #f2f2f2;
+}
+
+section {
+  background: #fff;
+}
+
+h1 {
+  border-bottom: solid #000 1px;
+}
+
+@media only screen and (min-width: 60em) {
+
+  .name,
+  .email {
+    padding-left: 0;
+  }
+
+  .age,
+  .fitness {
+    padding-right: 0;
+  }
+
+}
