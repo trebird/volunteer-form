@@ -34,6 +34,7 @@ select {
 [type="checkbox"] + label::before,
 [type="radio"] + label::before {
   border-color: #6e8c62;
+}
 
 .btn {
   background-color: #6e8c62;
