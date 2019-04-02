@@ -1,6 +1,6 @@
 html {
   font-family: "Noto Serif", serif;
-  background-color: #f2f2f2;
+  background-color: #fff;
 }
 
 header,
@@ -26,7 +26,6 @@ input,
 select,
 textarea {
   border-color: #6e8c62;
-  color: #f2f2f2;
 }
 
 [type="checkbox"] + label::before,
@@ -38,5 +37,5 @@ textarea {
   background-color: #6e8c62;
   color: #fff;
   border-color: #6e8c62;
-  border-radius: 1px;
+  border-radius: 3px;
 }
